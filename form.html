@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Tambah Mahasiswa</title>
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Latar belakang yang lembut */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengisi seluruh tinggi viewport */
+}
+.container {
+    background-color: #ffffff; /* Warna putih untuk form */
+    padding: 30px;
+    border-radius: 15px; /* Pojok melengkung */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Bayangan */
+    width: 100%;
+    max-width: 400px; /* Lebar maksimum */
+}
+h3 {
+    text-align: center;
+    color: #00796b; /* Warna judul */
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Warna label */
+}
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #b2ebf2; /* Border warna biru muda */
+    border-radius: 8px; /* Pojok melengkung */
+    box-sizing: border-box;
+    transition: border-color 0.3s; /* Efek transisi pada border */
+}
+input:focus,
+select:focus {
+    border-color: #00796b; /* Warna border saat fokus */
+    outline: none; /* Menghilangkan outline default */
+}
+button {
+    background-color: #00796b; /* Warna tombol */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px; /* Pojok melengkung */
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Efek transisi pada background */
+}
+button:hover {
+    background-color: #004d40; /* Warna tombol saat hover */
+}
+</style>
+<body>
+    <h1>Tambah Mahasiswa</h1>
+    <form>
+        <label for="Nama">Nama:</label>
+        <input name="Nama" type="text"><br><br>
+        <label for="NIM">NIM</label>
+        <input name="NIM" type="number"><br><br>
+        <label for="cars">Jenis Kelamin</label>
+        <select name="cars" id="cars">
+        <option selected disabled>Pilih Jenis Kelamin</option>
+        <option value="Cowo">Cowo</option>
+        <option value="Cewe">Cewe</option>
+        </select><br><br>
+        <button>Submit</button>
+        
+</body>
+</html>
